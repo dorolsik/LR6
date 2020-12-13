@@ -29,47 +29,39 @@
 
 Пользуясь командой _git pull origin master_ загрузил изменения из удалённого репозитория в локальный
 
-![Git pull](screenshots/Screenshot_9.png)
+![](скрип/s4.png)
 
 Командой _git log_ получил список операций/коммитов
 
-![git log](screenshots/Screenshot_10.png)
+![](скрип/s5.png)
 
-Используя _git show *commit SHA-1*_ получил более подробную информацию по последнему изменению
+Используя _git show_ получил более подробную информацию по последнему изменению
 
-![git show](screenshots/Screenshot_11.png)
+![](скрип/s6.png)
 
-Командой _git checkout -t branch1_ переключился на другую ветку **branch1**
+Командой _git checkout --track branch1_ переключился на другую ветку **branch1**
 
-![git checkout](screenshots/Screenshot_12.png)
+Попытался выполнить слияние веток **master** и **branch1** командой _git merge branch1_ и получил конфликт в файле mergefile.txt
 
-Попытался выполнить слияние веток **master** и **branch1** командой _git merge branch1_ и получил ошибку
+![](скрип/s7.png)
 
-![Merge error](screenshots/Screenshot_13.png)
+Вручную изменил файл mergefile.txt, вызвавший ошибку слияния и выполнил коммит и выполнил слияние веток **master** и **branch1**
 
-Вручную изменил файл mergefile.txt, вызвавший ошибку слияния и выполнил коммит
+![](скрип/s8.png)
 
-![Fix](screenshots/Screenshot_14.png)
+Затем удалил ветку **branch1** командой _git branch -d_ и запушил всё в удалённый репозиторий командой _git push origin master_ 
 
-Выполнил слияние веток **master** и **branch1** а затем удалил ветку **branch1** командой _it
-
-![Merge](screenshots/Screenshot_15.png)
-
-![Branch delete](screenshots/Screenshot_16.png)
-
-Запушил всё в удалённый репозиторий командой _git push origin master_ (Строка logon failed вылезает из-за какой-то внутренней ошибки)
-
-![Push1] (скриншоты / Screenshot_17.формат PNG)
+![](скрип/s9.png)
 
 Затем сделал несколько изменений, добавив новые файлы
 
-![Новые файлы] (скриншоты / Screenshot_19.формат PNG)
+![](скрип/s10.png)
 
-![Новые файлы git] (скриншоты / Screenshot_20.формат PNG)
+![](скрип/s11.png)
 
-Командой _git reset --hard HEAD~1_ выполнил откат последнего коммита - добавления файла **Новый текстовый документ.формат txt**
+Командой _git reset --hard HEAD~1_ выполнил откат последнего коммита - добавления файла **Новый файл**
 
-![Жесткий сброс] (скриншоты / Screenshot_22.формат PNG)
+![](скрип/s12.png)
 
 Запушил изменённую ветку
 
