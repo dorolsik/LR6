@@ -23,9 +23,9 @@
 
 ![](скрип/s20.png)
 
-![Нф](screenshots/Screenshot_6.png)
-@@ -25,66 +30,84 @@
-![Nf](screenshots/Screenshot_8.png)
+![](скрип/s21.png)
+
+![](скрип/s22.png)
 
 Пользуясь командой _git pull origin master_ загрузил изменения из удалённого репозитория в локальный
 
